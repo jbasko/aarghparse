@@ -90,3 +90,4 @@ If you install ``python-dateutil`` then you can try the above with:
     python -m aarghparse.examples.calendar now --help
     python -m aarghparse.examples.calendar now --tz "Europe/Riga"
     python -m aarghparse.examples.calendar --date-format "%d.%m.%Y." now --tz "Europe/Riga"
+
