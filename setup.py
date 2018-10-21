@@ -22,9 +22,9 @@ setup(
     maintainer="Jazeps Basko",
     maintainer_email="jazeps.basko@gmail.com",
     description="A collection of argparse extensions",
-    keywords="argparse",
+    keywords="argparse cli",
     long_description=read("README.rst"),
-    packages=["aarghparse cli"],
+    packages=["aarghparse"],
     python_requires=">=3.6.0",
     classifiers=[
         "Development Status :: 3 - Alpha",
