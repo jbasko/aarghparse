@@ -35,7 +35,7 @@ Example
 The example below combines all the features, but the tool doesn't enforce it on you.
 
 If you have an existing ``argparse.ArgumentParser`` definition, you should be able to replace it with ``aarghparse``
-by just changing the initialisation line to ``parser = aarghparse.ArgumentParse(...)``.
+by just changing the initialisation line to ``parser = aarghparse.ArgumentParser(...)``.
 
 .. code-block:: python
 
