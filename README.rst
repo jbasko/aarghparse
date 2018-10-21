@@ -50,11 +50,6 @@ by just changing the initialisation line to ``parser = aarghparse.ArgumentParser
     def calendar_cli(parser: ArgumentParser, subcommand: ArgumentParser.subcommand):
         """
         Command-line calendar.
-
-        Usage:
-
-            python -m aarghparse.examples.calendar now --tz "Europe/Riga"
-
         """
 
         parser.add_argument(
@@ -85,3 +80,13 @@ by just changing the initialisation line to ``parser = aarghparse.ArgumentParser
 
     if __name__ == "__main__":
         calendar_cli()
+
+
+If you install ``python-dateutil`` then you can try the above with:
+
+.. code-block:: shell
+
+    python -m aarghparse.examples.calendar --help
+    python -m aarghparse.examples.calendar now --help
+    python -m aarghparse.examples.calendar now --tz "Europe/Riga"
+    python -m aarghparse.examples.calendar --date-format "%d.%m.%Y." now --tz "Europe/Riga"

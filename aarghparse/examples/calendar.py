@@ -9,11 +9,6 @@ from aarghparse import ArgumentParser, arg_converter, cli
 def calendar_cli(parser: ArgumentParser, subcommand: ArgumentParser.subcommand):
     """
     Command-line calendar.
-
-    Usage:
-
-        python -m aarghparse.examples.calendar now --tz "Europe/Riga"
-
     """
 
     parser.add_argument(

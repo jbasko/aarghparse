@@ -9,11 +9,13 @@ def cli(init_parser: Callable) -> "Cli":
     Decorator for a function that takes "parser: ArgumentParser" as argument and initialises it as required.
     """
 
+    cli_help = init_parser.__doc__
     init_parser = optional_args_func(init_parser)
 
     class CustomCli(Cli):
         def __init__(self):
             super().__init__()
+            self.parser.description = cli_help
             init_parser(parser=self.parser, subcommand=self.parser.subcommand)
 
     return CustomCli()
