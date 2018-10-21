@@ -1,6 +1,15 @@
 -r requirements.txt
 
+# Development
 flake8
 isort
+pygments
 pytest
 pytest-random-order
+
+# Deployment
+twine
+
+# For examples
+python-dateutil
+

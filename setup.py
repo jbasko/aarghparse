@@ -21,10 +21,10 @@ setup(
     author_email="jazeps.basko@gmail.com",
     maintainer="Jazeps Basko",
     maintainer_email="jazeps.basko@gmail.com",
-    description="A library with a good name",
+    description="A collection of argparse extensions",
     keywords="argparse",
     long_description=read("README.rst"),
-    packages=["aarghparse"],
+    packages=["aarghparse cli"],
     python_requires=">=3.6.0",
     classifiers=[
         "Development Status :: 3 - Alpha",
