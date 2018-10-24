@@ -1,4 +1,4 @@
-__version__ = "0.0.2"  # also in "setup.py"
+__version__ = "0.1.0"  # also in "setup.py"
 
 
 from .arguments import arg_converter

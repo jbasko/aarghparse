@@ -38,4 +38,4 @@ def calendar_cli(parser: ArgumentParser, subcommand: ArgumentParser.subcommand):
 
 
 if __name__ == "__main__":
-    calendar_cli()
+    calendar_cli.run()

@@ -79,7 +79,7 @@ by just changing the initialisation line to ``parser = aarghparse.ArgumentParser
 
 
     if __name__ == "__main__":
-        calendar_cli()
+        calendar_cli.run()
 
 
 If you install ``python-dateutil`` then you can try the above with:
