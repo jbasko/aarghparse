@@ -26,3 +26,16 @@ def test_cli_runnable_with_class_and_instance():
     with pytest.raises(SystemExit) as exc_info:
         my_cli().run(args=['--help'])
     assert exc_info.value.code == 0
+
+
+def test_cli_init_parser_accepts_named_args():
+    kwargs_seen = []
+
+    @cli
+    def my_cli(a, b, parser):
+        parser.add_argument('-x')
+        kwargs_seen.append((a, b))
+
+    my_cli(a=1, b=2)
+
+    assert kwargs_seen[0] == (1, 2)

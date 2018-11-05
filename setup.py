@@ -14,7 +14,7 @@ def read(fname):
 
 setup(
     name="aarghparse",
-    version="0.1.0",  # also in __init__.py
+    version="0.2.0",  # also in __init__.py
     url="https://github.com/jbasko/aarghparse",
     license="MIT",
     author="Jazeps Basko",

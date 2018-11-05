@@ -14,10 +14,10 @@ def cli(init_parser: Callable) -> Type["Cli"]:
     init_parser = optional_args_func(init_parser)
 
     class CustomCli(Cli):
-        def __init__(self):
+        def __init__(self, **kwargs):
             super().__init__()
             self.parser.description = cli_help
-            init_parser(parser=self.parser, subcommand=self.parser.subcommand)
+            init_parser(parser=self.parser, subcommand=self.parser.subcommand, **kwargs)
 
     CustomCli.__name__ = init_parser.__name__
     CustomCli.__qualname__ = init_parser.__qualname__
